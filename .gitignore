@@ -1,0 +1,33 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Carpetas generadas automáticamente
+.import/
+
+# Archivos temporales del editor
+export.cfg
+export_presets.cfg
+mono_crash.*
+data_*/**
+
+# Builds/exportaciones (no deben subirse)
+*.exe
+*.apk
+*.aab
+*.zip
+*.pck
+*.wasm
+*.html
+*.js
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Si usas C# en Godot
+.mono/
+*.csproj
+*.sln
+*.user
+*.tmp
