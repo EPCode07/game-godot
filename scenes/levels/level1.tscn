@@ -1,0 +1,311 @@
+[gd_scene load_steps=21 format=4 uid="uid://cboakafw4jv6f"]
+
+[ext_resource type="Texture2D" uid="uid://s5hbschcs67n" path="res://assets/images/Tilemap/Terrain (16x16).png" id="1_7eoa5"]
+[ext_resource type="Texture2D" uid="uid://dv01hs817ck2k" path="res://assets/images/Background/Green.png" id="1_dgq62"]
+[ext_resource type="PackedScene" uid="uid://bnuepnhqm8bk6" path="res://scenes/player.tscn" id="2_rrv0w"]
+[ext_resource type="PackedScene" uid="uid://4shxpbw1mmpf" path="res://scenes/caracol.tscn" id="4_f5m83"]
+[ext_resource type="PackedScene" uid="uid://6rjxan0o7e5o" path="res://scenes/manzana.tscn" id="5_4po5r"]
+[ext_resource type="Texture2D" uid="uid://d0v1fimykeycs" path="res://assets/images/Tilemap/Checkpoint (Flag Idle)(64x64).png" id="6_2basl"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rrv0w"]
+texture = ExtResource("1_7eoa5")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:8/0 = 0
+7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:8/0 = 0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:9/0 = 0
+7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:9/0 = 0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:10/0 = 0
+7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:10/0 = 0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_dgq62"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_rrv0w")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adcqg"]
+atlas = ExtResource("6_2basl")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o4pvo"]
+atlas = ExtResource("6_2basl")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_craya"]
+atlas = ExtResource("6_2basl")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bh7ej"]
+atlas = ExtResource("6_2basl")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aetvv"]
+atlas = ExtResource("6_2basl")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q6iu"]
+atlas = ExtResource("6_2basl")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xhfr"]
+atlas = ExtResource("6_2basl")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3otjo"]
+atlas = ExtResource("6_2basl")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6emc"]
+atlas = ExtResource("6_2basl")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbma7"]
+atlas = ExtResource("6_2basl")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wagyc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adcqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o4pvo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_craya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bh7ej")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aetvv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7q6iu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xhfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3otjo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6emc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbma7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2basl"]
+size = Vector2(30, 96)
+
+[node name="LevelRoot" type="Node2D"]
+texture_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("1_dgq62")
+stretch_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAAAA4AAAAGAAoAAAABAA4AAAAHAAoAAAACAA4AAAAHAAoAAAADAA4AAAAHAAoAAAAEAA4AAAAHAAoAAAAFAA4AAAAHAAoAAAAGAA4AAAAHAAoAAAAHAA4AAAAHAAoAAAAIAA4AAAAHAAoAAAAJAA4AAAAHAAoAAAAKAA4AAAAHAAoAAAALAA4AAAAHAAoAAAAMAA4AAAAHAAoAAAANAA4AAAAHAAoAAAAOAA4AAAAHAAoAAAAPAA4AAAAHAAoAAAAQAA4AAAAHAAoAAAARAA4AAAAHAAoAAAASAA4AAAAHAAoAAAATAA4AAAAHAAoAAAAUAA4AAAAHAAoAAAAVAA4AAAAHAAoAAAAWAA4AAAAHAAoAAAAXAA4AAAAHAAoAAAAYAA4AAAAHAAoAAAAZAA4AAAAHAAoAAAAaAA4AAAAIAAoAAAAaAAEAAAAIAAkAAAAaAAIAAAAIAAkAAAAaAAUAAAAIAAgAAAAaAAYAAAAIAAkAAAAaAAcAAAAIAAkAAAAaAAgAAAAIAAkAAAAaAAkAAAAIAAkAAAAaAAoAAAAIAAkAAAAaAAsAAAAIAAkAAAAaAAwAAAAIAAkAAAAaAA0AAAAIAAkAAAAaAAAAAAAIAAkAAAAZAAAAAAAHAAkAAAAYAAAAAAAHAAkAAAAXAAAAAAAHAAkAAAAWAAAAAAAHAAkAAAAVAAAAAAAHAAkAAAAUAAAAAAAHAAkAAAATAAAAAAAHAAkAAAASAAAAAAAHAAkAAAARAAAAAAAHAAkAAAAQAAAAAAAHAAkAAAAPAAAAAAAHAAkAAAAOAAAAAAAHAAkAAAANAAAAAAAHAAkAAAAMAAAAAAAHAAkAAAALAAAAAAAHAAkAAAAKAAAAAAAHAAkAAAAJAAAAAAAHAAkAAAAIAAAAAAAHAAkAAAAHAAAAAAAHAAkAAAAGAAAAAAAHAAkAAAAFAAAAAAAHAAkAAAAEAAAAAAAHAAkAAAADAAAAAAAHAAkAAAACAAAAAAAHAAkAAAABAAAAAAAHAAkAAAAAAAAAAAAGAAkAAAAAAAEAAAAGAAkAAAAAAAIAAAAGAAkAAAAAAAMAAAAGAAkAAAAAAAQAAAAGAAkAAAAAAAUAAAAGAAkAAAAAAAYAAAAGAAkAAAAAAAcAAAAGAAkAAAAAAAgAAAAGAAkAAAAAAAkAAAAGAAkAAAAAAAoAAAAGAAkAAAAAAAsAAAAGAAkAAAAAAAwAAAAGAAkAAAAAAA0AAAAGAAkAAAACAAwAAAAHAAgAAAADAAwAAAAIAAgAAAADAA0AAAAIAAkAAAACAA0AAAAHAAkAAAABAA0AAAAHAAkAAAABAAwAAAAHAAgAAAAQAAwAAAAGAAgAAAAQAA0AAAAGAAkAAAARAAwAAAAIAAgAAAARAA0AAAAIAAkAAAAQAAgAAAAGAAgAAAARAAgAAAAHAAgAAAASAAgAAAAIAAgAAAAVAAUAAAAGAAgAAAAWAAUAAAAHAAgAAAAXAAUAAAAHAAgAAAAYAAUAAAAHAAgAAAAZAAUAAAAHAAgAAAAVAAYAAAAGAAoAAAAWAAYAAAAHAAoAAAAXAAYAAAAHAAoAAAAYAAYAAAAHAAoAAAAZAAYAAAAHAAoAAAABAAcAAAAMAAkAAAAKAAoAAAAGAAgAAAALAAoAAAAIAAgAAAAIAAgAAAAMAAkAAAAFAAoAAAAMAAkAAAAFAAUAAAAMAAkAAAA=")
+tile_set = SubResource("TileSet_dgq62")
+
+[node name="Player" parent="." instance=ExtResource("2_rrv0w")]
+position = Vector2(104, 527)
+
+[node name="caracoles" type="Node2D" parent="."]
+
+[node name="Caracol" parent="caracoles" instance=ExtResource("4_f5m83")]
+position = Vector2(521, 636)
+
+[node name="Caracol2" parent="caracoles" instance=ExtResource("4_f5m83")]
+position = Vector2(1182, 636)
+
+[node name="manzanas" type="Node2D" parent="."]
+
+[node name="Manzana" parent="manzanas" instance=ExtResource("5_4po5r")]
+position = Vector2(73, 297)
+
+[node name="Manzana2" parent="manzanas" instance=ExtResource("5_4po5r")]
+position = Vector2(527, 438)
+
+[node name="Manzana3" parent="manzanas" instance=ExtResource("5_4po5r")]
+position = Vector2(818, 527)
+
+[node name="Manzana4" parent="manzanas" instance=ExtResource("5_4po5r")]
+position = Vector2(818, 527)
+
+[node name="Manzana5" parent="manzanas" instance=ExtResource("5_4po5r")]
+position = Vector2(1064, 173)
+
+[node name="Flag" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1237, 176)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_wagyc")
+autoplay = "default"
+frame = 1
+frame_progress = 0.27699232
+
+[node name="Exit" type="Area2D" parent="."]
+position = Vector2(1301, 147)
+metadata/_edit_group_ = true
+
+[node name="ExitCollision" type="CollisionShape2D" parent="Exit"]
+position = Vector2(-5, 45)
+shape = SubResource("RectangleShape2D_2basl")

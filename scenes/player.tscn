@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bnuepnhqm8bk6"]
+[gd_scene load_steps=41 format=3 uid="uid://bnuepnhqm8bk6"]
 
 [ext_resource type="Texture2D" uid="uid://cr5wuuo4usecu" path="res://assets/images/player/Hit (32x32).png" id="1_dqkch"]
 [ext_resource type="Script" uid="uid://bfypokurp07nx" path="res://scripts/player.gd" id="1_qlg0r"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b88do28amun3p" path="res://assets/images/player/Jump (32x32).png" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://rkmjv2d57p3b" path="res://assets/images/player/Run (32x32).png" id="4_fjrip"]
 [ext_resource type="AudioStream" uid="uid://dud3qe6ets6bn" path="res://assets/sounds/jump.wav" id="6_tuyoq"]
+[ext_resource type="AudioStream" uid="uid://bvht83g4qvpio" path="res://assets/sounds/death.wav" id="7_fjrip"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
 atlas = ExtResource("1_dqkch")
@@ -257,7 +258,7 @@ script = ExtResource("1_qlg0r")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_j2b1d")
-animation = &"jump"
+animation = &"hit"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -266,3 +267,6 @@ shape = SubResource("RectangleShape2D_qlg0r")
 
 [node name="jumpSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_tuyoq")
+
+[node name="deidSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_fjrip")
